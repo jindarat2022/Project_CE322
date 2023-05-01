@@ -1,8 +1,10 @@
 package BackendCode;
 import java.io.Serializable;
 
+// Abstract class
 public abstract class Person implements Serializable {
-    protected int ID;
+    // Encapsulation OOP
+    protected int ID;                               // protected access   
     protected String CNIC, Name, Contact_No;
     public Person() {
     }
@@ -36,10 +38,14 @@ public abstract class Person implements Serializable {
     public void setContact_No(String Contact_No) {
         this.Contact_No = Contact_No;
     }
-    public abstract void Add();
+    
+    // Abstraction OOP
+    public abstract void Add();                     // Abstract method
     public abstract void Update();
     public abstract void Remove();
-    @Override
+    
+    // Polymorphism OOP
+    @Override                                       // native behavior of method "toString"
     public String toString() {
         return "Person_new{" + "ID=" + ID + ", CNIC=" + CNIC + ", Name=" + Name + ", Contact_No=" + Contact_No + '}';
     }
