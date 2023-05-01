@@ -12,9 +12,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Car implements Serializable {
-    private int ID;
+    
+    // Encapsulation OOP
+    private int ID;                                     // private access
     private String Maker, Name, Colour, Type;
-    int SeatingCapacity;
+    int SeatingCapacity;                                // default access
     String Model, Condition, RegNo;
     private int RentPerHour;
     private CarOwner carOwner;
