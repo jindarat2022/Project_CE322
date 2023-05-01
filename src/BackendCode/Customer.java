@@ -11,8 +11,8 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-
-public class Customer extends Person implements Serializable {
+// Inheritance OOP
+public class Customer extends Person implements Serializable {       // extends from Person
     private int Bill; // increases after every HOUR when a customers has Booked car(s)
     public Customer() {
         super();
@@ -31,7 +31,8 @@ public class Customer extends Person implements Serializable {
         this.Bill = Bill;
     }
 
-    @Override
+    // Polymorphism OOP
+    @Override                           // change the behavior of method "toString"
     public String toString() {
         return super.toString() + "Customer{" + "Bill=" + Bill + '}' + "\n";
     }
