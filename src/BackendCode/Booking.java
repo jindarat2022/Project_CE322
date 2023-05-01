@@ -13,7 +13,9 @@ import java.util.ArrayList;
 
 
 public class Booking implements Serializable {
-    private int ID;
+    
+    //Encapsulation OOP
+    private int ID;                    //private accesss
     private Customer customer;
     private Car car;
     private long RentTime, ReturnTime; // stores System time when the Book() method is called
